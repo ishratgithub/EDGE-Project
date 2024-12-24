@@ -5,21 +5,21 @@ With Selenium JUnit, developers can write automated tests for web applications u
 
 Using Selenium JUnit, developers can test the functionality of their web applications at the UI level and ensure that the applications are working as expected. This can improve the quality of the applications and help to catch bugs early in the development cycle.
 ## Prerequisite
--- JDK
--- Gradle
+- JDK
+- Gradle
 ## Tools and Technology used:
 - IDE: Intellij IDEA
 - Tool: Selenium
 - Test_Runner: Junit
 - Language: Java
 - Build tool: Gradle
-  ## Framework used:
-  - JUnit
-  ## How to run this project:
-  - Clone this project
-  - Give this following command gradle clean Test
-  ## Website used for this automation:
-  https://codenboxautomationlab.com/registration-form/ 
+## Framework used:
+- JUnit
+## How to run this project:
+- Clone this project
+- Give this following command gradle clean Test
+-  ## Website used for this automation:
+https://codenboxautomationlab.com/registration-form/ 
 ## Automation Report
 Here is the report of this automation process:
 ![Screenshot_1](https://github.com/user-attachments/assets/03d41692-c250-4cb3-b589-a9179a499cdd)
