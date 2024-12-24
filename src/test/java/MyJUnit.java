@@ -19,7 +19,7 @@ public class MyJUnit {
   @DisplayName("Get website title")
   @Test
   public void getTitle(){
-      driver.get("https://codenboxautomationlab.com/registration-form/");
+      driver.get("https://codenboxautomationlab.com/registration-form/ ");
       String titleActual = driver.getTitle();
       System.out.println(titleActual);
       //String titleExpected="CodenBoxAutomationLab";
@@ -28,15 +28,15 @@ public class MyJUnit {
   }
   @Test
   public void submitForm(){
-        driver.get("https://codenboxautomationlab.com/registration-form/");
-     List<WebElement> fromControls = driver.findElements(By.className("ninja-forms-field"));
-     fromControls.get(1).sendKeys("Ishrat");
-     fromControls.get(2).sendKeys("jahan");
-     fromControls.get(3).sendKeys("ijahan321@gmail.com");
-     fromControls.get(4).sendKeys("01764857213");
+      driver.get("https://codenboxautomationlab.com/registration-form/");
+      List<WebElement> fromControls = driver.findElements(By.className("ninja-forms-field"));
+      fromControls.get(1).sendKeys("Ishrat");
+      fromControls.get(2).sendKeys("jahan");
+      fromControls.get(3).sendKeys("ijahan321@gmail.com");
+      fromControls.get(4).sendKeys("01764857213");
 
-     WebElement dropdownElem = driver.findElement(By.id("nf-field-22"));
-     dropdownElem.click();
+      WebElement dropdownElem = driver.findElement(By.id("nf-field-22"));
+      dropdownElem.click();
       WebElement dropdownElem2 = driver.findElement(By.id("nf-field-24"));
       dropdownElem2.click();
       Actions actions = new Actions(driver);
@@ -46,17 +46,17 @@ public class MyJUnit {
       driver.findElement(By.id("nf-label-class-field-23-5")).click();
       driver.findElement(By.id("nf-field-15")).click();
 
-     scroll();
+      scroll();
   }
-  public void scroll(){
-      JavascriptExecutor js = (JavascriptExecutor) driver;
-      js.executeScript("window.scrollBy(0,500)");
-  }
+    public void scroll(){
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,500)");
+    }
 
-  //@AfterAll
-  public void closeBrowser(){
-         // driver.close();
+    //@AfterAll
+    public void closeBrowser(){
+        // driver.close();
         driver.quit();
-  }
+    }
 
 }
